@@ -94,6 +94,8 @@
         <a href="#about" class="btn btn-primary js-scroll-trigger">Notícia do Dia</a>
       </div>
     </div>
+    <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+    </div>
   </header>
 
   <!-- About Section -->
@@ -135,11 +137,17 @@
       <!-- <video id="videhome" src="video.mp4" controls></video> -->
 
   <!-- Projects Section -->
+  
   <section class="page-section portfolio" id="projects" style="background: #161616;">
     <div class="container">
-  <div class="row">
+      <div style="text-align: center;">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+      </div>
+      <br>
+  <div id="portfolioItem" class="row">
     <!-- Portfolio Item 1 -->
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 livro">
       <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
           <div class="portfolio-item-caption-content text-center text-white">
@@ -147,7 +155,7 @@
           </div>
         </div>
         <img class="img-fluid" src="https://www.einerd.com.br/wp-content/uploads/2019/04/homem-formiga-thanos-e1564493688947-470x320.jpg" alt="Erro">
-          <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">Paul Rudd completa 51 anos de idade e fãs brincam com sua aparência jovial</p>
+          <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">1</p>
         
       </div>
     </div>
@@ -155,7 +163,7 @@
     <img src="" alt="" height="">
 
     <!-- Portfolio Item 2 -->
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 livro">
       <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
           <div class="portfolio-item-caption-content text-center text-white">
@@ -163,12 +171,12 @@
           </div>
         </div>
         <img class="img-fluid" src="https://www.einerd.com.br/wp-content/uploads/2019/09/jovens-vingadores-disney-plus-e1568121120487-890x606.jpg" alt="Erro">
-        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">Séries podem introduzir Jovens Vingadores no Universo Marvel; entenda</p>
+        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">2</p>
       </div>
     </div>
 
     <!-- Portfolio Item 3 -->
-    <div class="col-md-6 col-lg-4">
+    <div  class="col-md-6 col-lg-4 livro">
       <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
           <div class="portfolio-item-caption-content text-center text-white">
@@ -176,12 +184,12 @@
           </div>
         </div>
         <img class="img-fluid" src="https://www.einerd.com.br/wp-content/uploads/2020/04/Resgate-trailer-capa-470x320.jpg" alt="">
-        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">Netflix divulga trailer de Resgate, seu novo filme estrelado por Chris Hemsworth.</p>
+        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">3</p>
       </div>
     </div>
 
     <!-- Portfolio Item 4 -->
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 livro">
       <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
           <div class="portfolio-item-caption-content text-center text-white">
@@ -189,12 +197,12 @@
           </div>
         </div>
         <img class="img-fluid" src="https://www.einerd.com.br/wp-content/uploads/2015/10/Banner-Marvel-VS-DC-e1573481803452-470x320.jpg" alt="" >
-        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">HQ da Marvel com capa da DC custa mais de 1 milhão de dólares; entenda</p>
+        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">4</p>
       </div>
     </div>
 
     <!-- Portfolio Item 5 -->
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 livro">
       <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
           <div class="portfolio-item-caption-content text-center text-white">
@@ -202,12 +210,12 @@
           </div>
         </div>
         <img class="img-fluid" src="https://www.einerd.com.br/wp-content/uploads/2020/03/coronavírus-séries-afetadas-capa-350x245.jpg" alt="">
-        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">The Witcher, Supernatural e mais: séries afetadas pela pandemia do coronavírus</p>
+        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">5</p>
       </div>
     </div>
 
     <!-- Portfolio Item 6 -->
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 livro">
       <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
           <div class="portfolio-item-caption-content text-center text-white">
@@ -215,7 +223,7 @@
           </div>
         </div>
         <img class="img-fluid" src="https://www.einerd.com.br/wp-content/uploads/2020/03/Coronavírus-filmes-mídias-digitais-capa-350x245.jpg" alt="">
-        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">Filmes que terão suas mídias digitais antecipadas aos fãs graças ao coronavírus</p>
+        <p style="color: blanchedalmond; font: outline; background: rgb(35, 39, 85);">6</p>
       </div>
     </div>
 
@@ -587,7 +595,39 @@
   </div>
 
   
+  <script>
+    myFunction()
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("portfolioItem");
+        li = ul.getElementsByClassName("livro");
+        var cont = 3
+        for (i = 0, j=0; i < li.length; i++) {
+          console.log(i);
+          if(input.value === ""){
+            if (j < cont) {
+              li[i].style.display = "";
+              j++;
 
+            }else{
+              
+              li[i].style.display = "none";
+            }
+          }else{
+            a = li[i].getElementsByTagName("div")[0].getElementsByTagName("p")[0];
+            console.log(a);
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+    }
+    </script>
 
 
 
